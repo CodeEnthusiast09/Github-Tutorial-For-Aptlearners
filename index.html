@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aptlearn NFT Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body>
     <main class="bg">
       <nav class="nav">
         <h1>aptLearn NFT</h1>
-        <ul class="navlinks">
-          <li>Home</li>
-          <li>Items</li>
-          <li>Author Profile</li>
-          <li>Blog</li>
-        </ul>
-        <button class="nav-button">Contact</button>
+        <span class="navlinks">
+          <i class="fas fa-xmark xmarkicon"></i>
+          <ul>
+            <li>Home</li>
+            <li>Items</li>
+            <li>Author Profile</li>
+            <li>Blog</li>
+          </ul>
+          <button class="nav-button">Contact</button>
+        </span>
+        <i class="fas fa-bars baricon" onclick="handleShowSidebar()"></i>
       </nav>
       <article class="section-1">
         <section class="section-1-text">
@@ -131,7 +139,59 @@
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
                 <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074</p>
+                  <p>HEIGHT 0.0074 ETH</p>
+                  <a href="#">Price Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section2card">
+            <div class="section-2-img-containers">
+              <div class="heartContainer">
+                <img src="/Images/heart.png" alt="" class="hearts" />
+                <span>1.2k</span>
+              </div>
+              <img
+                src="/Images/colors.png"
+                alt="aptLearnNFT"
+                class="main-img"
+              />
+            </div>
+            <div class="section2cardsub">
+              <div>
+                <img src="/Images/user3.png" alt="" />
+                <span>Peace</span>
+              </div>
+              <div class="section-2-sub">
+                <h3>Droplet Diamond</h3>
+                <div class="section-2-sub2">
+                  <p>HEIGHT 0.0074 ETH</p>
+                  <a href="#">Price Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section2card">
+            <div class="section-2-img-containers">
+              <div class="heartContainer">
+                <img src="/Images/heart.png" alt="" class="hearts" />
+                <span>1.2k</span>
+              </div>
+              <img
+                src="/Images/colors.png"
+                alt="aptLearnNFT"
+                class="main-img"
+              />
+            </div>
+            <div class="section2cardsub">
+              <div>
+                <img src="/Images/user3.png" alt="" />
+                <span>Peace</span>
+              </div>
+              <div class="section-2-sub">
+                <h3>Droplet Diamond</h3>
+                <div class="section-2-sub2">
+                  <p>HEIGHT 0.0074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
@@ -220,69 +280,7 @@
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="/Images/user2.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user1.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user4.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user1.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user2.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user4.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user5.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user2.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
-          <div class="section3card">
-            <img src="/Images/user1.png" alt="" />
-            <div>
-              <h4>Adebola</h4>
-              <p><span>0.004</span> ETH</p>
-            </div>
-          </div>
+
           <div class="section3card">
             <img src="/Images/user3.png" alt="" />
             <div>
@@ -369,15 +367,15 @@
       <div class="section5header">
         <h4>Discover</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit, lorem ipsum dolor sit
-          amet consectetur adipisicing elit? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor
+          vitae purus faucibus ornare suspendisse sed. Ornare quam viverra orci
+          sagittis eu. Ultrices eros in cursus turpis massa. Eget felis eget
+          nunc lobortis.
         </p>
       </div>
     </article>
+    <script src="./index.js"></script>
   </body>
 </html>
 
