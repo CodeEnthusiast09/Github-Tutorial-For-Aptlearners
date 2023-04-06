@@ -16,12 +16,13 @@ body {
   color: white;
   font-family: "Jost", sans-serif;
   padding-bottom: 30px;
+  width: 1350px;
 }
 a {
   text-decoration: none;
 }
 .bg {
-  background: url(./Images/background.png);
+  background: url(Images/background.png);
   /* min-height: 100vh;
   max-height: 800px; */
   padding: 0 5% 100px;
@@ -29,7 +30,6 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  max-width: 1440px;
   margin: auto;
   padding-top: 30px;
 }
@@ -71,7 +71,6 @@ a {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  max-width: 1440px;
   margin: 50px 50px 0;
 }
 .section-1 .section-1-text a {
@@ -146,7 +145,7 @@ a {
 }
 .section2 {
   position: relative;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* margin: 50px 50px 0; */
   padding: 0 5%;
 }
@@ -248,7 +247,7 @@ a {
   margin-left: auto;
 }
 .section3 {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 100px auto auto;
   border-radius: 10px;
   padding: 0 5%;
@@ -284,7 +283,7 @@ a {
 }
 
 .section4 {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 100px auto auto;
   padding: 0 5%;
 }
@@ -321,26 +320,45 @@ a {
   grid-row-end: -1;
 }
 .section5 {
-  margin: 50px auto auto;
+  margin: 100px auto;
   padding: 0 5%;
+  background: linear-gradient(180deg, #622c9a 21.71%, #332978 77%);
+  height: 500px;
+  border-radius: 15px;
+  padding: 50px;
+  display: flex;
 }
 .section5header h4 {
   margin-bottom: 10px;
+  font-size: 3rem;
 }
+.section5header p {
+  font-size: 1.2rem;
+}
+.section5header a {
+  background-color: var(--ButtonColor);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+/* For Smaller Screens */
 @media (max-width: 1000px) {
   html {
     font-size: 14px;
-    overflow: hidden;
   }
   .bodyUnscroll {
     overflow: hidden;
   }
   .nav .navlinks {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100%;
-    width: 50%;
+    width: 60%;
     z-index: 999;
     right: -100%;
     background-color: var(--background);
