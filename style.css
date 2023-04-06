@@ -16,13 +16,13 @@ body {
   color: white;
   font-family: "Jost", sans-serif;
   padding-bottom: 30px;
-  width: 1350px;
+  width: 1340px;
 }
 a {
   text-decoration: none;
 }
 .bg {
-  background: url(Images/background.png);
+  background: url(/Images/background.png);
   /* min-height: 100vh;
   max-height: 800px; */
   padding: 0 5% 100px;
