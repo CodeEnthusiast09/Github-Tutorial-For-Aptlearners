@@ -4,56 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aptlearn NFT Project</title>
+    <title>aptLearn NFT Project</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css" /> -->
   </head>
   <body>
     <main class="bg">
       <nav class="nav">
         <h1>aptLearn NFT</h1>
         <span class="navlinks">
-          <i class="fas fa-xmark xmarkicon" onclick="handleRemoveSideBar()"></i>
+          <i class="fas fa-xmark xmarkIcon" onclick="handleRemoveSidebar()"></i>
           <ul>
-            <li>Home</li>
-            <li>Items</li>
-            <li>Author Profile</li>
-            <li>Blog</li>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Items</li></a>
+            <a href="#"><li>Author Profile</li></a>
+            <a href="#"><li>Blog</li></a>
           </ul>
           <button class="nav-button">Contact</button>
         </span>
-        <i class="fas fa-bars baricon" onclick="handleShowSidebar()"></i>
+        <i class="fas fa-bars barIcon" onclick="handleShowSidebar()"></i>
       </nav>
       <article class="section-1">
         <section class="section-1-text">
           <h2 class="collectibles">Collectibles NFTs</h2>
-          <p>Find Trending NFT Auctions & Buy Timeless Artworks</p>
+          <p>Find Trending NFTs Auctions & Buy Timeless Artworks</p>
           <p>
             A much simpler NFT market that offers extraordinary original artwork
             by artist and an ideal price for collectors
           </p>
-          <a href="#">Browse NFTs</a>
+          <a href="#" class="section-1-text-button">Browse NFTs</a>
         </section>
         <section>
-          <div class="section-1-image-background-container">
-            <div class="section-1-img-containers">
+          <div class="section-1-img-background-container">
+            <div class="section-1-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
-              <img
-                src="Images/etherium.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
+              <img src="images/image 1.png" alt="aptLearn" class="main-image" />
             </div>
             <div class="section-1-sub">
               <h3>Droplet Diamond</h3>
-              <div class="section-1-sub2">
-                <p>HEIGHT 0.0074 ETH</p>
+              <div>
+                <p>HEIGHT 0.074 ETH</p>
                 <a href="#">Price Bid</a>
               </div>
             </div>
@@ -62,6 +59,14 @@
       </article>
     </main>
     <article class="section2">
+      <i
+        class="fas fa-chevron-left section2Arrow"
+        onclick="handleScrollLeft()"
+      ></i>
+      <i
+        class="fas fa-chevron-right section2Arrow"
+        onclick="handleScrollRight()"
+      ></i>
       <div class="section2Header">
         <div>
           <h2>Trending NFTs Of This Season</h2>
@@ -70,510 +75,258 @@
         <a href="#">Popular NFTs</a>
       </div>
       <section>
-        <i
-          class="fas fa-chevron-left section2arrow"
-          onclick="handleScrollLeft()"
-        ></i>
-        <i
-          class="fas fa-chevron-right section2arrow"
-          onclick="handleScrollRight()"
-        ></i>
-        <div class="section2ImageBackgroundContainer">
+        <div class="section2cardContainer">
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
-              <img
-                src="Images/etherium.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
+              <img src="images/image 1.png" alt="aptLearn" class="main-image" />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user1.png" alt="" />
+                <img src="images/Ellipse 21.png" alt="" />
                 <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img src="Images/golf.png" alt="aptLearnNFT" class="main-img" />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user5.png" alt="" />
-                <span>Oluwatola</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img src="Images/finger.png" alt="aptLearnNFT" class="main-img" />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user4.png" alt="" />
-                <span>O'Brien</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img src="Images/colors.png" alt="aptLearnNFT" class="main-img" />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user3.png" alt="" />
-                <span>Peace</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img src="Images/colors.png" alt="aptLearnNFT" class="main-img" />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user3.png" alt="" />
-                <span>Peace</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img src="Images/colors.png" alt="aptLearnNFT" class="main-img" />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user3.png" alt="" />
-                <span>Peace</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (4).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Ellipse 21.png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (3).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Ellipse 21.png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (2).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Ellipse 21.png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section2card">
-            <div class="section-2-img-containers">
+            <div class="section-2-img-container">
               <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
+                <img src="images/heart.png " alt="" class="heart" />
                 <span>1.2k</span>
               </div>
               <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
+                src="images/Rectangle 6171 (1).png"
+                alt="aptLearn"
+                class="main-image"
               />
             </div>
             <div class="section2cardsub">
               <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
+                <img src="images/Rectangle 6171 (1).png" alt="" />
+                <span>Adebola</span>
               </div>
               <div class="section-2-sub">
                 <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
-                  <a href="#">Price Bid</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section2card">
-            <div class="section-2-img-containers">
-              <div class="heartContainer">
-                <img src="Images/heart.png" alt="" class="hearts" />
-                <span>1.2k</span>
-              </div>
-              <img
-                src="Images/trending2.png"
-                alt="aptLearnNFT"
-                class="main-img"
-              />
-            </div>
-            <div class="section2cardsub">
-              <div>
-                <img src="Images/user2.png" alt="" />
-                <span>Richard</span>
-              </div>
-              <div class="section-2-sub">
-                <h3>Droplet Diamond</h3>
-                <div class="section-2-sub2">
-                  <p>HEIGHT 0.0074 ETH</p>
+                <div>
+                  <p>HEIGHT 0.074 ETH</p>
                   <a href="#">Price Bid</a>
                 </div>
               </div>
@@ -584,84 +337,125 @@
     </article>
     <article class="section3">
       <section class="section3bg">
-        <div class="section3header">
+        <div class="section3Header">
           <h2>Trending Creators</h2>
-          <p>NFT Card will give you access to special Airdrops</p>
+          <p>NFT Card will give you Access to Special Airdrops</p>
         </div>
-        <div class="section3content">
-          <div class="section3card">
-            <img src="Images/user4.png" alt="" />
+        <div class="section3Content">
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user5.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user3.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-
-          <div class="section3card">
-            <img src="Images/user3.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user2.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user5.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user5.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user2.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user3.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user4.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
             </div>
           </div>
-          <div class="section3card">
-            <img src="Images/user5.png" alt="" />
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
+            <div>
+              <h4>Adebola</h4>
+              <p><span>0.004</span> ETH</p>
+            </div>
+          </div>
+          <div class="section3Card">
+            <img src="images/Ellipse 22.png" alt="" />
             <div>
               <h4>Adebola</h4>
               <p><span>0.004</span> ETH</p>
@@ -671,55 +465,82 @@
       </section>
     </article>
     <article class="section4">
-      <div class="section4header">
+      <div class="section4Header">
         <h2>NFT Categories</h2>
         <a href="#">Load More</a>
       </div>
-      <div class="section4cardcontainer">
+      <div class="section4cardContainer">
         <div class="section4card">
-          <img src="Images/woman.png" alt="" />
-          <img src="Images/brain.png" alt="" />
-          <img src="Images/finger.png" alt="" />
+          <img src="images/Rectangle 6171 (1).png" alt="" />
+          <img src="images/Rectangle 6171 (4).png" alt="" />
+          <img src="images/Rectangle 6171 (3).png" alt="" />
         </div>
         <div class="section4card">
-          <img src="Images/colors.png" alt="" />
-          <img src="Images/diamond.png" alt="" />
-          <img src="Images/finger.png" alt="" />
+          <img src="images/Rectangle 6171 (3).png" alt="" />
+          <img src="images/Rectangle 6171 (2).png" alt="" />
+          <img src="images/Rectangle 6171 (4).png" alt="" />
         </div>
         <div class="section4card">
-          <img src="Images/woman.png" alt="" />
-          <img src="Images/etherium.png" alt="" />
-          <img src="Images/golf.png" alt="" />
+          <img src="images/Rectangle 6171 (4).png" alt="" />
+          <img src="images/Rectangle 6171 (3).png" alt="" />
+          <img src="images/Rectangle 6171 (1).png" alt="" />
         </div>
       </div>
-      <article class="section5">
-        <div class="section5header">
-          <h4>Explore And Discover Top trending NFTs</h4>
+      <div class="section4explore">
+        <div>
+          <h4>Explore And Discover Top Trending NFTs</h4>
           <p>
             Raroin is a shared liquidity NFT market smart contract which is used
-            by multiple websites to provide for the users
+            by multiple websites to provide the users
           </p>
-          <a href="#" target="_blank">Browse NFT</a>
+          <a href="#">Browse NFT</a>
         </div>
-        <img src="Images/nft.png" alt="" />
-      </article>
+        <img src="images/explore.png" alt="" />
+      </div>
     </article>
     <footer>
-      <section>
-        <h2>aptLearn NFT</h2>
-        <p>
-          Raroin is a shared liquidity NFT market smart contract which is used
-          by multiple websites to provide for the users
-        </p>
-      </section>
-      <section>
-        <h3>Service</h3>
-        <a href="#"></a>
-      </section>
-      <section></section>
+      <article class="footer">
+        <section class="footer1">
+          <h2>aptLearn NFT</h2>
+          <p>
+            Raroin is a shared liquidity NFT market smart contract which is used
+            by multiple websites to provide the users
+          </p>
+        </section>
+        <section>
+          <h3>Service</h3>
+          <a href="#">Create a Store</a>
+          <a href="#">Start Selling</a>
+          <a href="#">My Account</a>
+          <a href="#">List a Item</a>
+        </section>
+        <section>
+          <h3>Community</h3>
+          <a href="#">Art</a>
+          <a href="#">Digital Art</a>
+          <a href="#">Photography</a>
+          <a href="#">Games</a>
+          <a href="#">Music</a>
+        </section>
+        <section class="footer4">
+          <h3>Newsletter</h3>
+          <div class="footerInput">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+            />
+            <a href="#">Subscribe</a>
+          </div>
+          <div class="socialIcons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""> <i class="fab fa-telegram"></i> </a>
+          </div>
+        </section>
+      </article>
     </footer>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
-
-<!-- HTML file -->

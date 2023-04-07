@@ -1,27 +1,18 @@
-// Nav-Link 
-
-let navlink = document.querySelector('.navlinks');
-
-let body = document.querySelector("body");
-
-let sectionTwoCardContainer = document.querySelector('.section2ImageBackgroundContainer')
-
+const navlink = document.querySelector('.navlinks');
+const body = document.querySelector('body');
+const section2cardContainer = document.querySelector('.section2cardContainer');
 const handleShowSidebar = () => {
-  navlink.classList.add('navlinksShown');
-
-  body.classList.add('bodyUnscroll')
+	navlink.classList.add('navlinksShown');
+	body.classList.add('bodyUnscroll');
+};
+const handleRemoveSidebar = () => {
+	navlink.classList.remove('navlinksShown');
+	body.classList.remove('bodyUnscroll');
 };
 
-
-const handleRemoveSideBar = () => {
-  navlink.classList.remove('navlinksShown');
-
-  body.classList.remove('bodyUnscroll')
-}
-
 const handleScrollRight = () => {
-  sectionTwoCardContainer.scrollBy(500, 0);
-}
+	section2cardContainer.scrollBy(800, 0);
+};
 const handleScrollLeft = () => {
-  sectionTwoCardContainer.scrollBy(-500, 0);
-}
+	section2cardContainer.scrollBy(-800, 0);
+};
