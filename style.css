@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 .bg {
-  background: url(Images/bg.png);
+  background: url(/Images/bg.png);
   /* min-height: 100vh; */
   /* max-height: 800px; */
   padding: 0 5% 100px;
