@@ -254,7 +254,7 @@ a {
   max-width: 1440px;
   margin: auto;
   margin-top: 100px;
-  background: url(/images//bg.png);
+  background: url(/Images//bg.png);
   border-radius: 10px;
 }
 .section3bg {
@@ -344,7 +344,7 @@ a {
   font-size: 1.2rem;
 }
 footer {
-  background: url(./images/bg.png);
+  background: url(/Images/bg.png);
 }
 .footer {
   max-width: 1440px;
